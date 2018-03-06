@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "522180412201",
+    "firebase_url": "https://taskmanager-56.firebaseio.com",
+    "project_id": "taskmanager-56",
+    "storage_bucket": "taskmanager-56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522180412201:android:edf896bf57778caa",
+        "android_client_info": {
+          "package_name": "org.snowcorp.firebase.auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522180412201-djpd9p27ul45iim7buo9i0lk2ogm1k4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJsgm2rBk71fyuMhdrv_mwVRhwYH9TkQ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
