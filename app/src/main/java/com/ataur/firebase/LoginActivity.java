@@ -41,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private ProgressBar progressBar;
     private Button btnSignup, btnLogin, btnReset;
+
     com.google.android.gms.common.SignInButton signInButton;
 
     public static final int RequestSignInCode = 7;
@@ -71,6 +72,7 @@ public class LoginActivity extends AppCompatActivity {
         btnSignup = (Button) findViewById(R.id.btn_signup);
         btnLogin = (Button) findViewById(R.id.btn_login);
         btnReset = (Button) findViewById(R.id.btn_reset_password);
+
 
         signInButton = (com.google.android.gms.common.SignInButton) findViewById(R.id.btn_signup_with_google);
 
@@ -110,6 +112,8 @@ public class LoginActivity extends AppCompatActivity {
                 //startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
             }
         });
+
+
 
         // Adding Click listener to User Sign in Google button.
         signInButton.setOnClickListener(new View.OnClickListener() {
@@ -181,9 +185,18 @@ public class LoginActivity extends AppCompatActivity {
         final EditText editEmail = (EditText) dialogView.findViewById(R.id.email);
         final Button btnReset = (Button) dialogView.findViewById(R.id.btn_reset_password);
         final ProgressBar progressBar1 = (ProgressBar) dialogView.findViewById(R.id.progressBar);
+        final Button btn_back = (Button) dialogView.findViewById(R.id.btn_back);
 
         //dialogBuilder.setTitle("Send Photos");
         final AlertDialog dialog = dialogBuilder.create();
+
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                //startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
+            }
+        });
 
         btnReset.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
